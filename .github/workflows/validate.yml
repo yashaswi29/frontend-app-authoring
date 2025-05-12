@@ -38,7 +38,7 @@ jobs:
         # When we're only using Node 20, replace the line above with the following:
         # name: code-coverage-report
     - name: Upload coverage
-      uses: codecov/codecov-action@v4
+      uses: codecov/codecov-action@v5
       with:
         fail_ci_if_error: true
         token: ${{ secrets.CODECOV_TOKEN }}
