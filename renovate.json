@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "config:base",
+    "schedule:weekly",
+    ":rebaseStalePrs",
+    ":semanticCommits",
+    ":dependencyDashboard"
+  ],
+  "timezone": "America/New_York",
+  "patch": {
+    "automerge": false
+  },
+  "rebaseStalePrs": true,
+  "packageRules": [
+    {
+      "extends": [
+        "schedule:daily"
+      ],
+      "matchPackagePatterns": ["@edx", "@openedx"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": false
+    }
+  ]
+}

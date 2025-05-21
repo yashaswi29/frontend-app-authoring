@@ -1,0 +1,12 @@
+.requirements-section {
+  .form-group-custom:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .dropdown-prerequisite {
+    .dropdown-menu {
+      overflow: auto;
+      height: 20rem;
+    }
+  }
+}

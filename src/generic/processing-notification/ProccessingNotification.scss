@@ -1,0 +1,15 @@
+.processing-notification-icon {
+  animation: rotate 1s linear infinite;
+}
+
+.processing-notification-hide-close-button {
+  .btn-icon {
+    display: none;
+  }
+}
+
+.toast-container {
+  right: 1.25rem;
+  left: unset;
+  z-index: $zindex-popover;
+}
