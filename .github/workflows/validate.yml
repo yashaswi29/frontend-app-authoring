@@ -32,7 +32,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Download code coverage results
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v5
       with:
         name: code-coverage-report-20
         # When we're only using Node 20, replace the line above with the following:
